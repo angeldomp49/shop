@@ -1,0 +1,366 @@
+/**********imagen de fondo dependiendo la orientacion**********************/
+.body_portrait{
+        background: url("../img/calle.jpg") no-repeat center center fixed ;
+        background-attachment: fixed;
+  
+}
+.body_landscape{
+        background: url("../img/mesa.jpg") no-repeat center center fixed;
+        background-attachment: fixed;
+        background-size: 130% auto;
+}
+@media (max-width: 767px){
+    body{
+        width:100%;
+    }
+}
+@media (min-width: 768px){
+    body{
+        width: 98.9%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+#mainDiv{
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1% 0%;
+}
+/******************barra de navegacion***********/
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#desplegable{
+    margin-top: 2%;
+    margin-right: 6%;
+}
+.navbar-inverse .navbar-brand{
+    color: #CDB64C;
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .navbar-inverse .navbar-brand{
+        font-size: 24px;
+    }
+    .navbar-nav{     
+        font-size: 16px;
+    }
+}
+@media(min-width: 992px){
+    .navbar-inverse .navbar-brand{
+        font-size: 36px;
+    }
+    .navbar-nav{     
+        font-size: 24px;
+    }
+}
+@media tv{
+    .navbar-inverse .navbar-brand{
+        font-size: 48px;
+    }
+    .navbar-nav{
+        font-size: 32px;
+    }
+    
+}
+/******************frame*********************/
+#consulta{
+    width: 45%;
+    margin-left: 5%;
+    color: white;
+    background-color: #000000B2;
+    box-shadow: black 5px 5px 7px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+@media (max-width: 767px){
+    #consulta{
+        background-color: black;
+        margin-top: 10%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #consulta{
+        margin-top: 8%;
+    }
+}
+@media (min-width: 992px){
+    #consulta{
+        margin-top: 5%;
+    }
+}
+.form-group{
+    margin-bottom: 1%;
+}
+@media(min-width: 768px) and (max-width: 991px){
+    label{
+        font-size: 16px;
+    }
+}
+@media(min-width: 992px){
+    label{
+        font-size: 24px;
+    }
+}
+@media tv{
+    label{
+        font-size: 32px;
+    }
+}
+h3{
+    padding-bottom: 1%;
+}
+textarea{
+    font-family: sans-serif;
+    font-size: 32px;
+}
+@media (max-width: 767px){
+    .botonConsulta{
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 4%;
+        width: 80%;
+        margin-top: 2px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .botonConsulta{
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 4%;
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+@media (min-width: 992px){
+    .botonConsulta{
+        margin-top: 10%;
+    }
+}
+#consulta_desc{
+    width: 40%;
+    margin-left: 10%;
+    background-color: #FFFFFFE2;
+}
+@media(min-width: 769px) and (max-width: 991px){
+    #consulta_desc{
+        height: 120%;
+        word-wrap: break-word;
+        overflow: scroll;
+        margin-top: 12%;
+    }
+}
+@media(min-width: 992px){
+    #consulta_desc{
+        height: 70%;
+        word-wrap: break-word;
+        overflow: scroll;
+        margin-top: 10%;
+    }
+}
+#consulta_desc h2{
+    font-family: sans-serif;
+}
+#consulta_desc p{
+    font-family: sans;
+    text-align: justify;
+}
+@media(max-width: 767px){
+    #consulta_desc h2{
+        font-size: 24px;
+    }
+    #consulta_desc p{
+        font-size: 16px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    #consulta_desc h2{
+        font-size: 24px;
+    }
+    #consulta_desc p{
+        font-size: 16px;
+    }
+}
+@media(min-width: 992px){
+    #consulta_desc h2{
+        font-size: 36px;
+    }
+    #consulta_desc p{
+        font-size: 24px;
+    }
+}
+/***************footer******************/
+
+footer table{
+    margin: 4% 0%;
+}
+footer table td{
+    text-align: center;
+}
+/*Justamente para los botones redondos la formula es:********/
+/*para el ancho y alto: (tamaño de la fuente  por 5 veces)***/
+/*para el radio del borde es (ancho/2)***********************/
+.btn-custome{
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #C1AB46;
+    border-color: #BBA543;
+}
+@media(max-width: 767px){
+    .btn-rounded{
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .btn-rounded{
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
+@media(min-width: 992px){
+    .btn-rounded{
+        font-size: 14px;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+}
+.btn-custome:hover,
+.btn-custome:focus,
+.btn-custome.focus,
+.btn-custome:active,
+.btn-custome.active,
+.open > .dropdown-toggle.btn-custome {
+  color: #fff;
+  background-color: #B6A140;
+  border-color: #B19C3D;
+}
+.btn-custome:active,
+.btn-custome.active,
+.open > .dropdown-toggle.btn-custome {
+  background-image: none;
+}
+.btn-custome.disabled,
+.btn-custome[disabled],
+fieldset[disabled] .btn-custome,
+.btn-custome.disabled:hover,
+.btn-custome[disabled]:hover,
+fieldset[disabled] .btn-custome:hover,
+.btn-custome.disabled:focus,
+.btn-custome[disabled]:focus,
+fieldset[disabled] .btn-custome:focus,
+.btn-custome.disabled.focus,
+.btn-custome[disabled].focus,
+fieldset[disabled] .btn-custome.focus,
+.btn-custome.disabled:active,
+.btn-custome[disabled]:active,
+fieldset[disabled] .btn-custome:active,
+.btn-custome.disabled.active,
+.btn-custome[disabled].active,
+fieldset[disabled] .btn-custome.active {
+    background-color: #C1AB46;
+    border-color: #BBA543;
+}
+.btn-custome .badge {
+    background-color: #C1AB46;
+    border-color: #BBA543;
+}
+.modal-body{
+    text-align: justify;
+}
+.link-custome{
+    font-family: sans;
+    font-size: 20px;
+}
+@media(max-width: 767px){
+    
+}
+@media(min-width: 768px) and (max-width: 991px){
+    
+}
+@media(min-width: 992px){
+
+}
+/*Estilos para el apartado de areas de enfoque*/
+.etiquetaImg{
+    background-color: #000000B2;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.ae:hover{
+    background-color: #FFFFFF32;
+}
+#multiElementos{
+    width: 400%;
+    padding: 0%;
+}
+#carousel{
+    width: 98%;
+    background-color: white;
+}
+#segundoMultiElementos{
+    padding: 0%;
+}
+#d5{
+    padding: 2% 10%;
+    background-color: white;
+    font-size: 24px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+#d5 h2{
+    font-size: 30px;
+}
+.subElemento{
+    background-color: #00000050;
+    display: inline-block;
+    padding: 1% 0.5%;
+}
+.subQSomos{
+    width: 89%;
+    margin-bottom: 10%;
+    padding: 2% 5%;
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: white;
+    text-align: justify;
+    color: #1C4768;
+}
+#vision, #titulo4{
+    margin-left: 10%;
+}
+.subQSomos h2{
+    padding: 1%;
+    border: 3px solid #337ab0;
+    color: #337ab0;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2% 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
