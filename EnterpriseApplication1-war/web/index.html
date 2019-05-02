@@ -15,221 +15,94 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/index.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container-fluid row" id="mainDiv">
-            
-            <nav id="mainNavbar" class="navbar navbar-inverse navbar-fixed-top row">
-                <div class="navbar-header col-xs-offset-1">
-                    <a href="#" class="navbar-brand">S&aacute;nchez & Ramirez</a>
-                    <button  id="desplegable" class="pull-right btn-custome visible-xs" data-toggle="collapse" data-target="#navigation-1" type="button">
-                        <i class="fas fa-bars fa-2x"></i>
-                    </button>
-                </div>
-                <ul class="nav navbar-nav visible-lg-inline visible-md-inline visible-sm-inline" id="navigation-0">
-                    <li class="inicio active"><a href="#">Inicio</a></li>
-                    <li class="somos"><a href="#">Quienes Somos</a></li>
-                    <li class="areasEnfoqueClass"><a href="#">Areas de Enfoque</a></li>
-                    <li class="contactanos"><a href="#">Contactanos</a></li>
-                </ul>
-                <div class="col-xs-offset-1">
-                    <ul class="nav navbar-nav collapse row" id="navigation-1">
-                        <li class="inicio card card-collapse col-xs-12 active"><a href="#">Inicio</a></li>
-                        <li class="somos card card-collapse col-xs-12"><a href="#">Quienes Somos</a></li>
-                        <li class="areasEnfoqueClass card card-collapse col-xs-12"><a href="#">Areas de Enfoque</a></li>
-                        <li class="contactanos card card-collapse col-xs-12"><a href="#">Contactanos</a></li>
+        <div class="container-fluid" id="mainDiv">
+            <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="navbar-brand">S&aacute;nchez & Ramirez</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav" id="navigation-0">
+                        <li class="nav-item active inicio"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/">Inicio</a></li>
+                        <li class="nav-item somos"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/quienesSomos.html">Quienes Somos</a></li>
+                        <li class="nav-item areasEnfoqueClass"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/areasDeEnfoque.html">Areas de Enfoque</a></li>
+                        <li class="nav-item contactanos"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/contactanos.jsp">Contactanos</a></li>
                     </ul>
                 </div>
-                
             </nav>
-            <div id="multiElementos">
-                <div id="d1" class="col-sm-3 col-sm-offset-0 subElemento">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div id="primerDiv">
+                    <div id="carousel1" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1" data-slide-to="1"></li>
+                            <li data-target="#carousel1" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/apreton.jpg" alt="apreton" class="img-responsive">
+                            <div class="carousel-item active">
+                                <img src="img/apreton.jpg" alt="apreton" class="img-fluid">
                                 <h2 class="carousel-caption">Responsabilidad</h2>
                             </div>
-                            <div class="item">
-                                <img src="img/equipo.jpg" alt="equipo" class="img-responsive">
+                            <div class="carousel-item">
+                                <img src="img/equipo.jpg" alt="equipo" class="img-fluid">
                                 <h2 class="carousel-caption">Trabajo en equipo</h2>
                             </div>
-                            <div class="item">
-                                <img src="img/balanza.png" alt="balanza" class="img-responsive">
+                            <div class="carousel-item">
+                                <img src="img/balanza.png" alt="balanza" class="img-fluid">
                                 <h2 class="carousel-caption">Respeto</h2>
                             </div>
                         </div>
-                        <a href="#carousel" class="left carousel-control" data-slide="prev">
-                            <span class="icon-prev"></span></a>
-                        <a href="#carousel" class="right carousel-control" data-slide="next">
-                            <span class="icon-next"></span></a>
+                        <a href="#carousel1" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+                        <a href="#carousel1" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span></a>
                     </div>
                 </div>
-                <div id="d2" class="col-sm-3 col-sm-offset-0 subElemento">
-                    <div id="mision" class="subQSomos">
-                        <h2>mision</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                           elit. Sit, eligendi, consectetur odit molestiae 
-                           voluptatum cupiditate maiores ipsum minima voluptates
-                           atque eos expedita repellat ipsam ab corporis dolore 
-                           quibusdam. Officia, recusandae.</p>
+            <div id="segundoDiv" class="col-sm-12 bg-white px-5 py-5">
+                <div class="row">
+                    <div class="col-sm-4 px5">
+                        <div class="card carta-fondo-fijo carta-valor1">
+                            <div class="f-neg-transp card-img-overlay d-flex align-items-center justify-content-center">
+                                <h3 class="card-title txt-dorado">Valores</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div id="vision" class="subQSomos">
-                        <h2>vision</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                           elit. Nemo, iure, molestiae neque porro incidunt 
-                           mollitia doloribus enim vero ad quisquam assumenda 
-                           repellat rerum fugiat non tenetur eos numquam quis 
-                           beatae.</p>
+                    <div class="col-sm-4 px5">
+                        <div class="card carta-fondo-fijo carta-valor2">
+                            <div class="f-neg-transp card-img-overlay d-flex align-items-center justify-content-center">
+                                <h3 class="card-title txt-dorado">Valores</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div id="titulo3" class="subQSomos">
-                        <h2>Titulo</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                           elit. Ducimus, quas, vitae, in blanditiis soluta 
-                           voluptatibus labore sed non animi reiciendis iste harum
-                           fugiat fugit ex excepturi quo id a adipisci.</p>
-                    </div>
-                    <div id="titulo4" class="subQSomos">
-                        <h2>Titulo</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                           Suscipit, omnis, ut, aut commodi sunt ullam tempora totam
-                           pariatur provident cum facere perspiciatis similique! 
-                           Illo, suscipit, quo neque sit architecto eos.</p>
+                    <div class="col-sm-4 px5">
+                        <div class="card carta-valor3 carta-fondo-fijo">
+                            <div class="f-neg-transp card-img-overlay d-flex align-items-center justify-content-center">
+                                <h3 class="card-title txt-dorado">Valores</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="d3" class="col-sm-3 col-sm-offset-0 row subElemento">
-                    <div id='mercantil' class='col-sm-4 col-sm-offset-2 ae' >
-                        <img alt="imagen de derecho mercantil" src='img/inversionHex2.png' class='img-responsive ' />
-                        <h2 class='col-sm-12 etiquetaImg'>Derecho Mercantil</h2>
-                    </div>
-                    <div id="familiar" class="col-sm-4 ae">
-                        <img alt="imagen de derecho familiar" src='img/derechoFamiliarHex2.png' class='img-responsive' />
-                        <h2 class="col-sm-12 etiquetaImg">Derecho Familiar</h2>
-                    </div>
-                    <div id="civil" class="col-sm-4 col-sm-offset-4">
-                        <img alt="imagen de derecho civil" src="img/contratoHex2.png"  class="img-responsive">
-                        <h2 class="col-sm-12 etiquetaImg">Derecho Civil</h2>
-                    </div>
-                </div>
-                <div id="d4" class="col-sm-3 col-sm-offset-0 row subElemento">
-                    <div class="col-sm-5 col-sm-offset-1 row" id="consulta">
-                        
-                        <form action="" class=" form-horizontal col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-11 ">
-                            <div class="form-group">
-                               <h3 class="col-sm-offset-4">Obten una asesoria legal sin costo:</h3> 
-                            </div>
-                            <div class="form-group">
-                             <label class="control-label col-sm-4" for="nombre">Nombre Completo:</label>
-                             <div class="col-sm-8">
-                                 <input type="text" id="nombre" name="nombre" class="form-control col-sm-10" placeholder="Nombre Completo">
-                             </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-4"  for="e-mail">Correo electr&oacute;nico:</label>
-                              <div class="col-sm-8">
-                                 <input type="email"  id="e-mail" name="e-mail" class="form-control col-sm-10" placeholder="Correo"> 
-                              </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="control-label col-sm-4"  for="descripcion">Mensaje para el ejecutivo:</label>
-                                <div class="col-sm-8">
-                                   <textarea name="descripcion" id="descripcion" cols="30" rows="3" class="form-control" placeholder=""></textarea> 
-                                </div>
-                            </div>
-                        
-                            <div class="form-group">
-                                <div class="checkbox col-sm-offset-4">
-                                    <label class="control-label" for="aviso">
-                                        <input type="checkbox" id="aviso" name="aviso" class="">He leido el aviso de privacidad.
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-4">
-                                    <button class="btn botonConsulta btn-default visible-xs-block visible-sm-block visible-md-inline visible-lg-inline">Borrar Todo</button>
-                                    <button class="btn botonConsulta btn-primary visible-xs-block visible-sm-block visible-md-inline visible-lg-inline">Obtener una consulta</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div id="consulta_desc" class="col-sm-6 row">
-                        <h2 class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">Las asesorias legales</h2>
-                        <p class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">En Grupo SR & Asociados, sabemos la importancia de estar bien informados antes de tomar
-                           decisiones importantes, es por esto que ofrecemos el servicio de asesorias en materia
-                           legal, con el objetivo de proporcionar informaci&oacute;n confiable y concisa, con respecto
-                           a la situaci&oacute;n que el cliente vaya a llevar a cabo.</p>
-                        <p class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">Para obtener su primer asesoria
-                           legal sin costo, es necesario unicamente proporcionarnos su nombre y un correo 
-                           electr&oacute;nico o bien puede comunicarse por los diferentes medios que ponemos a su 
-                           disposici&oacute;n.</p>
-                    </div> 
-                </div>                
             </div>
-            <div id="segundoMultiElementos" class="col-sm-12">
-                <div id="d5">
-                    <h2>Titulo del algo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sit, 
-                        molestias, dolor consequuntur non perferendis excepturi temporibus 
-                        eligendi provident porro sed harum deserunt dolore beatae fuga ea 
-                        tempora aspernatur suscipit nulla facilis quasi at quos consequatur
-                        libero ex dolorum odit cupiditate blanditiis atque odio. Accusantium
-                        , in, vel dolores veritatis porro asperiores repellat cum maxime nam
-                        voluptatibus at necessitatibus! Nesciunt, similique, tempora, iusto,
-                        laborum provident amet dicta consequatur ab ad odit sapiente non ipsam
-                        praesentium recusandae aliquid earum dolor illo animi quam illum beatae
-                        reprehenderit corrupti hic. Ducimus, necessitatibus, omnis, tenetur cum 
-                        ad quas tempora beatae eligendi nostrum voluptatem commodi quo asperiores 
-                        rerum magni eveniet obcaecati adipisci hic iusto totam voluptate. Recusandae,
-                        eaque, esse, explicabo hic rem officiis dicta mollitia delectus consectetur fugit 
-                        amet sapiente quis placeat porro neque voluptas nihil dolor ab alias minima autem 
-                        perspiciatis similique optio quod voluptatum rerum sunt animi incidunt vero libero 
-                        sint eligendi expedita ducimus.
-                    </p> 
-                </div>
-                
-            </div>
-            <div id="pieInt" class="col-sm-12">
-            <footer id="pie" >
-                    <table id="iconos" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 row">
+            <footer class="bg-dark py-5" >
+                    <table id="iconos" class="d-flex justify-content-center">
                         <tr>
-                            <td><button data-toggle="modal" href="#infoFacebook" class="btn btn-custome btn-rounded boton-footer"><i class="fab fa-facebook-f fa-3x"></i></button></td>
+                            <td><button class="btn btn-custome btn-rounded boton-footer"><i class="fab fa-facebook-f fa-3x"></i></button></td>
                             <td><button id="enlaceTelefono" class="btn btn-custome btn-rounded boton-footer"><i class="fas fa-phone-volume fa-3x"></i></button></td>
                             <td><button id="enlaceTwitter" class="btn btn-custome btn-rounded boton-footer"><i class="fab fa-twitter fa-3x"></i></button></td>
                             <td><button id="enlaceWhatsapp" class="btn btn-custome btn-rounded boton-footer"><i class="fab fa-whatsapp fa-3x"></i></button></td>
                             <td><button id="enlaceEmail" class="btn btn-custome btn-rounded boton-footer"><i class="fas fa-envelope fa-3x"></i></button></td>
                         </tr>
                     </table>
-                <div class="modal fade" id="infoFacebook">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" data-dismiss="modal" class="close">X</button>
-                                <h2 class="modal-title">yyyyyy</h2>
-                            </div>
-                            <div class="modal-body">
-                                <a href="">fffffffffff</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="offset-sm-1 txt-12 text-white">Sanchez & Ramirez Abogados.</p>
+                <p class="offset-sm-1 txt-12 text-white">Derechos Reservados.</p>
             </footer>
-          </div>      
         </div>
     
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>');</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="js/vendor/bootstrap.bundle.min.js"></script>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

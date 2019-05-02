@@ -1,0 +1,27 @@
+.subQSomos{
+    width: 89%;
+    margin-bottom: 10%;
+    padding: 1% 1%;
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: white;
+    text-align: justify;
+    color: #1C4768;
+}
+#vision, #titulo4{
+    margin-left: 10%;
+}
+.subQSomos h2{
+    padding: 1%;
+    border: 3px solid #337ab0;
+    color: #337ab0;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2% 0%;
+}
+
+

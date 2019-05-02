@@ -1,0 +1,107 @@
+#consulta{
+    color: white;
+    background-color: #000000B2;
+    box-shadow: black 0.5rem 0.5rem 1.1rem;
+    padding: 2% 5%;
+}
+.m-deb-5pc{
+    margin-bottom: 5%;
+}
+@media (max-width: 767px){
+    #consulta{
+        background-color: black;
+    }
+}
+.form-group{
+    margin-bottom: 1%;
+}
+@media(min-width: 768px) and (max-width: 991px){
+    label{
+        font-size: 1.2rem;
+    }
+}
+@media(min-width: 992px){
+    label{
+        font-size: 1.4rem;
+    }
+}
+@media tv{
+    label{
+        font-size: 2rem;
+    }
+}
+textarea{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+@media (max-width: 767px){
+    .botonConsulta{
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 4%;
+        width: 80%;
+        margin-top: 0.2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .botonConsulta{
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 4%;
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+@media (min-width: 992px){
+    .botonConsulta{
+        margin-top: 10%;
+    }
+}
+#consulta_desc{
+    background-color: #FFFFFFE2;
+}
+@media(min-width: 769px) and (max-width: 991px){
+    #consulta_desc{
+        height: 120%;
+        word-wrap: break-word;
+        overflow: auto;
+    }
+}
+@media(min-width: 992px){
+    #consulta_desc{
+        height: 70%;
+        word-wrap: break-word;
+        overflow: auto;
+    }
+}
+#consulta_desc h2{
+    font-family: sans-serif;
+}
+#consulta_desc p{
+    font-family: sans;
+    text-align: justify;
+}
+@media(max-width: 767px){
+    #consulta_desc h2{
+        font-size: 1.2rem;
+    }
+    #consulta_desc p{
+        font-size: 1rem;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    #consulta_desc h2{
+        font-size: 1.2rem;
+    }
+    #consulta_desc p{
+        font-size: 1rem;
+    }
+}
+@media(min-width: 992px){
+    #consulta_desc h2{
+        font-size: 2rem;
+    }
+    #consulta_desc p{
+        font-size: 1.2rem;
+    }
+}

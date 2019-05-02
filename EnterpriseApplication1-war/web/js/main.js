@@ -1,21 +1,4 @@
 jQuery(document).ready(function(){
-    function tamInput(){
-        /*Hace un ajuste de los elementos input de un formulario
-         *de forma manual pues bootstrap no lo permite de forma
-         *automatica*/
-        if(screen.width <= 767){
-           $("input").removeClass("input-lg"); 
-           $("input").addClass("input-sm");
-        }
-        if((screen.width > 767) && (screen.width <=992) ){
-           $("input").removeClass("input-ld"); 
-           $("input").removeClass("input-sm");
-        }
-        if(screen.width >992){
-           $("input").removeClass("input-sm");
-           $("input").addClass("input-lg");   
-        }
-    }
     
     function cambiarActivo($grupo, indice){
       /*cambia el elemento activo primer parametro el grupo, segundo el elemento que
@@ -111,36 +94,6 @@ jQuery(document).ready(function(){
         else return false;
     }
     
-    function ajusteContactos(){
-        if(isportrait()){
-            $("#consulta").removeClass("col-sm-6");
-            $("#consulta_desc").removeClass("col-sm-offset-1");
-            $("#consulta_desc").removeClass("col-sm-5");
-            
-            $("#consulta").addClass("col-sm-12");
-            $("#consulta_desc").addClass("col-sm-12");
-            
-            $("body").removeClass("body_landscape");
-            $("body").addClass("body_portrait");
-        }
-        else{
-            $("#consulta").removeClass("col-sm-12");
-            $("#consulta_desc").removeClass("col-sm-12");
-            
-            $("#consulta").addClass("col-sm-6");
-            $("#consulta_desc").addClass("col-sm-offset-1");
-            $("#consulta_desc").addClass("col-sm-5");
-            
-            $("body").removeClass("body_portrait");
-            $("body").addClass("body_landscape");
-        }
-    }
-    
-    function ajustePaddingNavbar(){
-            var altoBarra = $("#mainNavbar").css("height");
-            $("#mainDiv").css("padding-top",altoBarra);
-    }
-    
     function utilitiCambiarActivo(objEvent, indice){
         objEvent.preventDefault();
         cambiarActivo($("#navigation-0 li"),indice);
@@ -160,24 +113,5 @@ jQuery(document).ready(function(){
     }
     //////////////////////////////////////////////////////////
     //////////////*Codigo principal*//////////////////////////
-    tamInput();
-    ajusteContactos();
-    ajustePaddingNavbar();
-    /*Agrega eventos a los elementos de la barra de navegacion*/
-    $("#navigation-0 .inicio").click(function(e){
-        utilitiCambiarActivo(e,0);
-        cambiarElementoSuperior(0);
-    });
-    $("#navigation-0 .somos").click(function(e){
-        utilitiCambiarActivo(e,1);
-        cambiarElementoSuperior(1);
-    });
-    $("#navigation-0 .areasEnfoqueClass").click(function(e){
-        utilitiCambiarActivo(e,2);
-        cambiarElementoSuperior(2);
-    });
-    $("#navigation-0 .contactanos").click(function(e){
-        utilitiCambiarActivo(e,3);
-        cambiarElementoSuperior(3);
-    });
+    $("#mainDiv").css("padding-top",$("#mainNavbar").css("height"));
 });

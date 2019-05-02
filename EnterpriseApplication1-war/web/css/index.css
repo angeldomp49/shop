@@ -1,15 +1,12 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 25-feb-2019, 21:47:23
-    Author     : ayf
-*/
-body{
-    background-image: url('../img/mesa.jpeg');
+.carta-valor1{
+    background-image: url("../img/edif3.jpg");
+    background-position:center;
 }
-#primerApartado{
-    background-image: url("../img/mesa.jpg");
+.carta-valor2{
+    background-image: url("../img/edif2.jpg");
+    background-position:left;
+}
+.carta-valor3{
+    background-image: url("../img/edif.jpg");
+    background-position:left;
 }
