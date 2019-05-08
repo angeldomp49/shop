@@ -31,5 +31,18 @@ public class datosPagina {
         this.frases.put("tituloCarta1", "valores");
         this.frases.put("tituloCarta2", "valores");
         this.frases.put("tituloCarta3", "valores");
+        this.frases.put("tituloQS1", "Mision");
+        this.frases.put("textoQS1", "Lorem ipsum dolor sit amet\n, consectetur adipisicing elit.Quae, at, quod, dolor voluptas ducimus provident perspiciatis neque numquam ipsam dolorum sit nobis maiores itaque voluptatum architecto dolores facilis non repellendus+!");
+        this.frases.put("tituloQS2", "Mision");
+        this.frases.put("textoQS2", "Lorem ipsum dolor sit amet\n, consectetur adipisicing elit.Quae, at, quod, dolor voluptas ducimus provident perspiciatis neque numquam ipsam dolorum sit nobis maiores itaque voluptatum architecto dolores facilis non repellendus+!");
+        this.frases.put("tituloQS3", "Mision");
+        this.frases.put("textoQS3", "Lorem ipsum dolor sit amet\n, consectetur adipisicing elit.Quae, at, quod, dolor voluptas ducimus provident perspiciatis neque numquam ipsam dolorum sit nobis maiores itaque voluptatum architecto dolores facilis non repellendus+!");
+        this.frases.put("tituloQS4", "Mision");
+        this.frases.put("textoQS4", "Lorem ipsum dolor sit amet\n, consectetur adipisicing elit.Quae, at, quod, dolor voluptas ducimus provident perspiciatis neque numquam ipsam dolorum sit nobis maiores itaque voluptatum architecto dolores facilis non repellendus+!");
+        this.frases.put("subtituloImagenDerecho1", "Derecho1");
+        this.frases.put("subtituloImagenDerecho2", "Derecho2");
+        this.frases.put("subtituloImagenDerecho3", "Derecho3");
+        this.frases.put("tituloContactanos1", "Titulo");
+        this.frases.put("textoContactanos1", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,cupiditate, aspernatur officiis temporibus rerum obcaecati cumque? Ipsam, possimus eos fugiat assumenda explicabo cupiditate laudantium culpa provident voluptatibus ipsum dolorem quos!");
     }
 }

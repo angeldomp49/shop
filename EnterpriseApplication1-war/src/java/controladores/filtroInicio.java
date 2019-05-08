@@ -104,20 +104,10 @@ public class filtroInicio implements Filter {
         datosPagina p = new datosPagina();
         p.cargarDatos();
         Map <String,String> frases = new HashMap<>();
-        frases.put("tituloHead", p.frases.get("tituloHead"));
-        frases.put("tituloBarra", p.frases.get("tituloBarra"));
-        frases.put("enlaceBarra1", p.frases.get("enlaceBarra1"));
-        frases.put("enlaceBarra2", p.frases.get("enlaceBarra2"));
-        frases.put("enlaceBarra3", p.frases.get("enlaceBarra3"));
-        frases.put("enlaceBarra4", p.frases.get("enlaceBarra4"));
-        frases.put("subtituloImagen1",p.frases.get("subtituloImagen1"));
-        frases.put("subtituloImagen2",p.frases.get("subtituloImagen2"));
-        frases.put("subtituloImagen3",p.frases.get("subtituloImagen3"));
-        frases.put("tituloCarta1", p.frases.get("tituloCarta1"));
-        frases.put("tituloCarta2", p.frases.get("tituloCarta2"));
-        frases.put("tituloCarta3", p.frases.get("tituloCarta3"));
-        frases.put("textoPie1",p.frases.get("textoPie1"));
-        frases.put("textoPie2",p.frases.get("textoPie2"));
+        for(Map.Entry<String,String> entrada : p.frases.entrySet()){
+            frases.put(entrada.getKey(), entrada.getValue());
+        }
+        
         request.setAttribute("frases", frases);
         
         Throwable problem = null;

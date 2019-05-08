@@ -31,7 +31,7 @@
         <![endif]-->
         <div class="container-fluid" id="mainDiv">
             <nav id="mainNavbar" class="editable navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="editable navbar-brand"><c:out value="${requstScope.frases['tituloBarra']}"></c:out></a>
+                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="navbar-brand"><c:out value="${requestScope.frases['tituloBarra']}"></c:out></a>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav" id="navigation-0">
                         <li class="nav-item active inicio"><a class="editable nav-link" href="http://localhost:8080/EnterpriseApplication1-war/"><c:out value="${requestScope.frases['enlaceBarra1']}" ></c:out></a></li>
