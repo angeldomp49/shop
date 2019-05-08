@@ -139,3 +139,12 @@ fieldset[disabled] .btn-custome.active {
 .hover-white:hover{
     background-color: #FFFFFF32;
 }
+.editarBloqueMuestra{
+    height: 5rem;
+}
+#terminarEdicion{
+    position:fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}

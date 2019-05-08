@@ -1,14 +1,16 @@
+<%-- 
+    Document   : areasDenEnfoque
+    Created on : 02-may-2019, 21:18:44
+    Author     : ayf
+--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title><c:out value="${requestScope.frases['tituloHead']}"></c:out></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/jpg" href="img/iconossv.jpg">
@@ -23,28 +25,28 @@ and open the template in the editor.
     <body>
         <div class="container-fluid f-mesa" id="mainDiv">
             <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="navbar-brand">S&aacute;nchez & Ramirez</a>
+                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="navbar-brand"><c:out value="${requestScope.frases['tituloBarra']}"></c:out></a>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav" id="navigation-0">
-                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/quienesSomos.html">Quienes Somos</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/areasDeEnfoque.html">Areas de Enfoque</a></li>
-                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/contactanos.jsp">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/"><c:out value="${requestScope.frases['enlaceBarra1']}"></c:out></a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/quienesSomos.jsp"><c:out value="${requestScope.frases['enlaceBarra2']}"></c:out></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/areasDeEnfoque.jsp"><c:out value="${requestScope.frases['enlaceBarra3']}"></c:out></a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/contactanos.jsp"><c:out value="${requestScope.frases['enlaceBarra4']}"></c:out></a></li>
                     </ul>
                 </div>
             </nav>
             <div class="row">
                     <div id='mercantil' class='col-sm-4 offset-sm-2 hover-white' >
                         <img alt="imagen de derecho mercantil" src='img/inversionHex2.png' class='img-fluid' />
-                        <h2 class='col-sm-12 etiquetaImg'>Derecho Mercantil</h2>
+                        <h2 class='col-sm-12 etiquetaImg'><c:out value="${requestScope.frases['subtituloImagenDerecho1']}"></c:out></h2>
                     </div>
                     <div id="familiar" class="col-sm-4 hover-white">
                         <img alt="imagen de derecho familiar" src='img/derechoFamiliarHex2.png' class='img-fluid' />
-                        <h2 class="col-sm-12 etiquetaImg">Derecho Familiar</h2>
+                        <h2 class="col-sm-12 etiquetaImg"><c:out value="${requestScope.frases['subtituloImagenDerecho2']}"></c:out></h2>
                     </div>
                     <div id="civil" class="col-sm-4 offset-sm-4 hover-white">
                         <img alt="imagen de derecho civil" src="img/contratoHex2.png"  class="img-fluid">
-                        <h2 class="col-sm-12 etiquetaImg">Derecho Civil</h2>
+                        <h2 class="col-sm-12 etiquetaImg"><c:out value="${requestScope.frases['subtituloImagenDerecho3']}"></c:out></h2>
                     </div>
                 </div>
             <footer class="bg-dark py-5" >
@@ -57,8 +59,8 @@ and open the template in the editor.
                             <td><button id="enlaceEmail" class="btn btn-custome btn-rounded boton-footer"><i class="fas fa-envelope fa-3x"></i></button></td>
                         </tr>
                     </table>
-                <p class="offset-sm-1 txt-12 text-white">Sanchez & Ramirez Abogados.</p>
-                <p class="offset-sm-1 txt-12 text-white">Derechos Reservados.</p>
+                <p class="offset-sm-1 txt-12 text-white"><c:out value="${requestScope.frases['textoPie1']}"></c:out></p>
+                <p class="offset-sm-1 txt-12 text-white"><c:out value="${requestScope.frases['textoPie2']}"></c:out></p>
             </footer>
         </div>
         <script src="js/vendor/jquery-3.3.1.min.js"></script>

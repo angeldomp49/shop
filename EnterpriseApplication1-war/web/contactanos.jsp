@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title><c:out value="${requestScope.frases['tituloHead']}"></c:out></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/jpg" href="img/iconossv.jpg">
@@ -24,21 +24,42 @@
     </head>
     <body>
         <div class="container-fluid" id="mainDiv">
+            <c:choose>
+                <c:when test="${requestScope.verificado == 2}">
+                    <div class="alert alert-success alert-dismissable fade show fixed-bottom" role="alert">
+                        El registro fue exitoso.
+                        <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </c:when>
+                <c:when test="${requestScope.verificado == 1}" >
+                    <div class="alert alert-danger alert-dismissable fade show fixed-bottom" role="alert">
+                        El registro no se completo, por favor intentelo de nuevo.
+                        <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                </c:otherwise>
+            </c:choose>
+            
             <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="navbar-brand">S&aacute;nchez & Ramirez</a>
+                <a href="http://localhost:8080/EnterpriseApplication1-war/" class="navbar-brand"><c:out value="${requestScope.frases['tituloBarra']}"></c:out></a>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav" id="navigation-0">
-                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/quienesSomos.html">Quienes Somos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/areasDeEnfoque.html">Areas de Enfoque</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/contactanos.jsp">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/"><c:out value="${requestScope.frases['enlaceBarra1']}"></c:out></a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/quienesSomos.jsp"><c:out value="${requestScope.frases['enlaceBarra2']}"></c:out></a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/areasDeEnfoque.jsp"><c:out value="${requestScope.frases['enlaceBarra3']}"></c:out></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="http://localhost:8080/EnterpriseApplication1-war/contactanos.jsp"><c:out value="${requestScope.frases['enlaceBarra4']}"></c:out></a></li>
                     </ul>
                 </div>
             </nav>
             <div class="row f-mesa pt-5">
                     <div class="col-sm-5 row d-flex justify-content-center" id="consulta">
                         
-                        <form action="" class="col-xs-10 offset-xs-1 col-sm-12 offset-sm-0 col-md-11">
+                        <form method="post" action="controlFormContactanos" class="col-xs-10 offset-xs-1 col-sm-12 offset-sm-0 col-md-11">
                             <div class="form-group">
                                 <h3 class="m-deb-5pc">Obten una asesoria legal sin costo:</h3> 
                             </div>
@@ -56,8 +77,8 @@
                             </div>
                         
                             <div class="form-group form-check">
-                                <input type="checkbox" id="aviso" name="aviso" class="">
-                                <label class="control-label" for="aviso">He leido el aviso de privacidad.</label>
+                                <input type="checkbox" id="aviso" name="aviso" class="form-check-input">
+                                <label class="form-check-label" for="aviso">He leido el aviso de privacidad.</label>
                             </div>
                             <div class="form-group">
                                 <button class="btn botonConsulta btn-default visible-xs-block visible-sm-block visible-md-inline visible-lg-inline">Borrar Todo</button>
@@ -66,15 +87,9 @@
                         </form>
                     </div>
                     <div id="consulta_desc" class="col-sm-5 offset-sm-2 row d-flex justify-content-center p-4">
-                        <h2 class="">Las asesorias legales</h2>
-                        <p class="">En Grupo SR & Asociados, sabemos la importancia de estar bien informados antes de tomar
-                           decisiones importantes, es por esto que ofrecemos el servicio de asesorias en materia
-                           legal, con el objetivo de proporcionar informaci&oacute;n confiable y concisa, con respecto
-                           a la situaci&oacute;n que el cliente vaya a llevar a cabo.</p>
-                        <p class="">Para obtener su primer asesoria
-                           legal sin costo, es necesario unicamente proporcionarnos su nombre y un correo 
-                           electr&oacute;nico o bien puede comunicarse por los diferentes medios que ponemos a su 
-                           disposici&oacute;n.</p>
+                        <h2 class=""><c:out value="${requestScope.frases['tituloContactanos1']}"></c:out></h2>
+                        <c:out value="${requestScope.frases['textoContactanos1']}" escapeXml="false"></c:out>
+                       
                     </div> 
             </div>
             <footer class="bg-dark py-5" >
@@ -87,8 +102,8 @@
                             <td><button id="enlaceEmail" class="btn btn-custome btn-rounded boton-footer"><i class="fas fa-envelope fa-3x"></i></button></td>
                         </tr>
                     </table>
-                <p class="offset-sm-1 txt-12 text-white">Sanchez & Ramirez Abogados.</p>
-                <p class="offset-sm-1 txt-12 text-white">Derechos Reservados.</p>
+                <p class="offset-sm-1 txt-12 text-white"><c:out value="${requestScope.frases['textoPie1']}"></c:out></p>
+                <p class="offset-sm-1 txt-12 text-white"><c:out value="${requestScope.frases['textoPie2']}"></c:out></p>
             </footer>
         </div>
             

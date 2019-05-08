@@ -1,0 +1,14 @@
+#mainDiv,body{
+    overflow-x: hidden;
+}
+.f-oficina{
+    background: fixed center  url("../img/oficina.jpg");
+    background-size: cover;
+}
+.form-admin{
+    background-color: #000000B2;
+    color: white;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border-radius: 1rem;
+}
